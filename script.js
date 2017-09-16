@@ -1,9 +1,3 @@
-var jq = document.createElement("script");
-
-jq.addEventListener("load", proceed); // pass my hoisted function
-jq.src = "//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js";
-document.querySelector("head").appendChild(jq);
-
 $(document).ready(function(){
   // Add smooth scrolling to all links
   $("a").on('click', function(event) {
