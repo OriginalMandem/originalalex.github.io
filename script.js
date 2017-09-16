@@ -1,7 +1,8 @@
-var script = document.createElement('script');
-script.src = 'http://code.jquery.com/jquery-1.11.0.min.js';
-script.type = 'text/javascript';
-document.getElementsByTagName('head')[0].appendChild(script);
+var jq = document.createElement("script");
+
+jq.addEventListener("load", proceed); // pass my hoisted function
+jq.src = "//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js";
+document.querySelector("head").appendChild(jq);
 
 $(document).ready(function(){
   // Add smooth scrolling to all links
